@@ -1,0 +1,178 @@
+---
+title: "2024 Graphics-중간고사"
+author: "2223013/박현서"
+output: word_document
+---
+
+
+# 시험지를 받기 전 수행할 code 1
+
+```{r eval=FALSE}
+install.packages("rstudioapi") # popup 창에서 "아니오" 선택
+```
+
+# 시험지를 받기 전 수행할 code 2
+```{r eval=FALSE}
+rstudioapi::executeCommand('setWorkingDirToActiveDoc')
+fn <- list.files("./")
+fn =fn[-grep("2024-Graphics-Midterm-",fn)]
+#Check its existence
+if (length(fn)>1) {
+  #Delete file if it exists
+  file.remove(fn)
+}
+
+rm(list = ls())
+
+rstudioapi::executeCommand('closeOtherSourceDocs')
+rstudioapi::executeCommand('clearHistory') # popup 창에서 "예" 선택
+```
+
+```{r}
+library(tidyverse)
+```
+
+\newpage
+#### 1.(10점) DATA1, DATA2 만들기 
+
+```{r error=TRUE}
+
+```
+
+\newpage
+#### 2.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 3.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 4.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 5.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 6.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 7.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 8.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+\newpage
+#### 9.(10점)  1에서 만든 data를 이용하여 아래의 그림을 위한 code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 10.(10점) 1에서 만든 data를 이용하여 아래의 그림을 위한 R code를 작성하시오. 
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 11. (10점) Lake Huron의 연도별 수위자료 huron는 아래의 code로 만들 수 있다. huron 이용하여 아래와 같은 그림을 그리는 code를 작성하시오. (LakeHuron은 R에 내장되어 있는 자료임)
+
+```{r error=TRUE}
+
+```
+
+
+
+\newpage
+#### 12. (20점) Orange는 R에 내장되어 있는 자료이다.
+## (1) (5점) help를 이용하여 Orange 자료의 각 변수의 의미를 파악하시오.
+
+* Tree:
+* age:
+* circumference:
+
+## (15점) Orange 자료를 살펴보기 위해 아래와 같은 그림을 그렸다. 이를 위한 R code를 작성하고 그림을 해석하시오
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 13. (15점) mpg 자료에서 자료에서 class변수에 대한 barchart를 그린 것이다. 이 그림을 위한 R code를 작성하고 그림을 해석하시오
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 14. (15점) 아래의 그림은 mpg 자료에서 class변수의 범주별 cty분포를 알아보기 위한 그림에 trans 별 cty의 평균을 점으로 표시한 것이다. 이 그림을 위한 R code를 작성하고 그림을 해석하시오
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+#### 15. (15점) ggplot2 library에 내장되어 있는 mpg자료에서 displ과 hwy의 관계를 drive 별로 표현하기 위해 아래와 같은 그림을 그렸다. 이를 위한 R code를 작성하고 그림을 해석하시오
+
+```{r error=TRUE}
+
+```
+
+\newpage
+#### 16. (25점) ggplot2 library에 내장되어 있는 diamonds 자료에서 price에 영향을 미치는 요인들을 알아보려고 한다. carat이 가장 큰 영향을 미치고 있으므로 price에서 carat에 대한 효과를 제외하기 위해 carat당 price를 계산한 pricePcarat 변수를 만든 후 color, cut, clarity와 pricePcarat 간의 관계를 알아보려고 한다. 아래의 code를 이용하여 pricePcarat 변수를 만든 후 color, cut, clarity와의 관계를 다양하게 살펴보고 파악한 특징을 상세히 기술하시오. (R code와 해석이 모두 있어야 함)
+
+```{r error=TRUE}
+
+```
+
+
+\newpage
+
+* 아래의 code는 그대로 두어야 합니다. 변형시 cheating으로 간주합니다. 
+
+```{r}
+print(getwd())
+fn <- list.files("./")
+print(fn)
+print(Sys.time())
+print(ls(pos=1))
+```
